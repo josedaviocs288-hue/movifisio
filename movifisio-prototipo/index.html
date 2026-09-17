@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e5e68" />
+  <title>MoviFisio — Fisioterapia mais acessível</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilos.css" />
+</head>
+<body>
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="MoviFisio início">
+      <span class="brand-mark">M</span>
+      <span>Movi<span>Fisio</span></span>
+    </a>
+    <nav class="nav">
+      <a href="#recursos">Recursos</a>
+      <a href="#profissionais">Profissionais</a>
+      <a href="#planos">Planos</a>
+      <button class="ghost" id="btnLogin">Entrar</button>
+      <button class="primary small" id="btnCadastro">Criar conta</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">FISIOTERAPIA, PREVENÇÃO E ACOMPANHAMENTO</span>
+        <h1>Cuide do seu movimento <span>com mais orientação.</span></h1>
+        <p>Conteúdos educativos, exercícios orientados pelo seu fisioterapeuta e acompanhamento de progresso em um só lugar.</p>
+        <div class="hero-actions">
+          <button class="primary" id="btnComecar">Começar gratuitamente</button>
+          <button class="outline" id="btnDemo">Ver demonstração</button>
+        </div>
+        <div class="trust-row">
+          <div><strong>Passo a passo</strong><span>Conteúdo simples</span></div>
+          <div><strong>Progresso</strong><span>Acompanhamento visual</span></div>
+          <div><strong>Profissionais</strong><span>Conexão facilitada</span></div>
+        </div>
+      </div>
+      <div class="phone-wrap">
+        <div class="phone">
+          <div class="phone-top"><span>9:41</span><span>● ● ▰</span></div>
+          <div class="app-head">
+            <div>
+              <small>Bom dia 👋</small>
+              <h3>Olá, Mariana</h3>
+            </div>
+            <div class="avatar">M</div>
+          </div>
+          <div class="daily-card">
+            <div>
+              <small>PLANO DE HOJE</small>
+              <h4>Mobilidade de ombro</h4>
+              <p>3 exercícios • 12 min</p>
+            </div>
+            <button class="round-play" data-open-exercise="1">▶</button>
+          </div>
+          <div class="progress-mini">
+            <div><strong>72%</strong><span>Meta semanal</span></div>
+            <div class="bar"><span style="width:72%"></span></div>
+          </div>
+          <div class="mini-title"><span>Recomendados pelo profissional</span><button data-section="exercicios">Ver todos</button></div>
+          <div class="mini-exercises">
+            <button data-open-exercise="2"><span>🧘</span><b>Alongamento cervical</b><small>6 min</small></button>
+            <button data-open-exercise="3"><span>🦵</span><b>Fortalecimento do joelho</b><small>9 min</small></button>
+          </div>
+          <div class="bottom-nav"><span>⌂<small>Início</small></span><span>▷<small>Exercícios</small></span><span>◉<small>Progresso</small></span><span>♙<small>Perfil</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-note">
+      <div class="shield">✚</div>
+      <div><strong>Uso responsável</strong><p>A MoviFisio não realiza diagnósticos e não substitui consultas. Exercícios terapêuticos devem seguir orientação de um profissional habilitado.</p></div>
+    </section>
+
+    <section class="section" id="recursos">
+      <div class="section-head">
+        <span class="eyebrow">O QUE A PLATAFORMA ENTREGA</span>
+        <h2>Um apoio simples para quem precisa continuar o cuidado em casa.</h2>
+      </div>
+      <div class="features-grid">
+        <article><div class="ico">▶</div><h3>Vídeos guiados</h3><p>Execução passo a passo, repetições, duração e cuidados importantes.</p></article>
+        <article><div class="ico">✓</div><h3>Plano do profissional</h3><p>O fisioterapeuta pode indicar quais conteúdos fazem parte do plano do paciente.</p></article>
+        <article><div class="ico">↗</div><h3>Progresso</h3><p>Registro de sessões concluídas, metas semanais e evolução do acompanhamento.</p></article>
+        <article><div class="ico">⌖</div><h3>Encontre atendimento</h3><p>Perfis de fisioterapeutas e clínicas, especialidades, localização e contato.</p></article>
+        <article><div class="ico">♿</div><h3>Acessibilidade</h3><p>Textos maiores, alto contraste e navegação simplificada para diferentes públicos.</p></article>
+        <article><div class="ico">◇</div><h3>Prevenção</h3><p>Conteúdos educativos sobre mobilidade, hábitos e prevenção de lesões.</p></article>
+      </div>
+    </section>
+
+    <section class="dashboard-section" id="demo">
+      <div class="dash-sidebar">
+        <div class="brand side"><span class="brand-mark">M</span><span>Movi<span>Fisio</span></span></div>
+        <button class="side-link active" data-view="inicioDash">⌂ <span>Início</span></button>
+        <button class="side-link" data-view="exercicios">▷ <span>Exercícios</span></button>
+        <button class="side-link" data-view="progresso">◉ <span>Meu progresso</span></button>
+        <button class="side-link" data-view="profissionaisView">⌖ <span>Profissionais</span></button>
+        <button class="side-link" data-view="prevencao">◇ <span>Prevenção</span></button>
+        <button class="side-link" data-view="perfil">♙ <span>Meu perfil</span></button>
+        <div class="side-upgrade"><b>MoviFisio Plus</b><p>Recursos adicionais e acompanhamento ampliado.</p><button data-scroll="planos">Conhecer plano</button></div>
+      </div>
+
+      <div class="dash-main">
+        <div class="dash-top">
+          <div><small>PROTÓTIPO DO PACIENTE</small><h2 id="viewTitle">Seu acompanhamento</h2></div>
+          <div class="dash-actions"><button id="fontToggle" title="Aumentar fonte">A+</button><button id="contrastToggle" title="Alto contraste">◐</button><div class="avatar">M</div></div>
+        </div>
+
+        <div class="view active" id="inicioDash">
+          <div class="hello-card">
+            <div><span class="tag">PLANO ORIENTADO</span><h3>Continue de onde parou</h3><p>Seu plano demonstrativo possui 4 atividades nesta semana.</p><button class="primary" data-open-exercise="1">Continuar sessão</button></div>
+            <div class="stat-circle"><strong id="percentMain">72%</strong><span>meta semanal</span></div>
+          </div>
+          <div class="stats-grid">
+            <div><span>Sessões concluídas</span><strong id="sessionsCount">8</strong><small>neste mês</small></div>
+            <div><span>Sequência atual</span><strong>4 dias</strong><small>consistência</small></div>
+            <div><span>Tempo acompanhado</span><strong>1h 48</strong><small>este mês</small></div>
+          </div>
+          <div class="block-title"><div><h3>Atividades do seu plano</h3><p>Conteúdos demonstrativos indicados no protótipo.</p></div><button class="text-btn" data-view="exercicios">Ver biblioteca</button></div>
+          <div class="exercise-grid" id="homeExercises"></div>
+        </div>
+
+        <div class="view" id="exercicios">
+          <div class="filter-row">
+            <input id="exerciseSearch" placeholder="Buscar exercício ou região do corpo..." />
+            <select id="exerciseFilter"><option value="todos">Todas as categorias</option><option value="mobilidade">Mobilidade</option><option value="alongamento">Alongamento</option><option value="fortalecimento">Fortalecimento</option><option value="prevencao">Prevenção</option></select>
+          </div>
+          <div class="exercise-grid large" id="exerciseLibrary"></div>
+        </div>
+
+        <div class="view" id="progresso">
+          <div class="progress-layout">
+            <div class="chart-card"><div class="block-title"><div><h3>Frequência semanal</h3><p>Sessões registradas no protótipo.</p></div><span class="tag">Últimos 7 dias</span></div><div class="bars" id="progressBars"></div></div>
+            <div class="goal-card"><span class="tag">META</span><h3>4 sessões por semana</h3><div class="big-progress"><span id="goalRing">3/4</span></div><button class="outline full" id="markSession">Registrar sessão concluída</button></div>
+          </div>
+          <div class="history-card"><h3>Histórico recente</h3><div id="historyList"></div></div>
+        </div>
+
+        <div class="view" id="profissionaisView">
+          <div class="filter-row">
+            <input id="professionalSearch" placeholder="Buscar por nome, especialidade ou cidade..." />
+            <select id="specialtyFilter"><option value="todos">Todas as especialidades</option><option>Ortopédica</option><option>Geriátrica</option><option>Esportiva</option><option>Neurológica</option></select>
+          </div>
+          <div class="professional-grid" id="professionalGrid"></div>
+        </div>
+
+        <div class="view" id="prevencao">
+          <div class="content-grid">
+            <article><div class="content-cover green">POSTURA</div><h3>Pausas durante estudo e trabalho</h3><p>Conteúdo educativo com hábitos simples para reduzir longos períodos na mesma posição.</p><button class="text-btn" data-article="Pausas durante estudo e trabalho">Ler conteúdo →</button></article>
+            <article><div class="content-cover blue">MOBILIDADE</div><h3>Movimento ao longo do dia</h3><p>Entenda por que variar posições e manter uma rotina ativa pode ser importante.</p><button class="text-btn" data-article="Movimento ao longo do dia">Ler conteúdo →</button></article>
+            <article><div class="content-cover sand">ATIVIDADE FÍSICA</div><h3>Preparação antes do treino</h3><p>Dicas gerais de organização e aquecimento, sem substituir orientação individual.</p><button class="text-btn" data-article="Preparação antes do treino">Ler conteúdo →</button></article>
+          </div>
+        </div>
+
+        <div class="view" id="perfil">
+          <div class="profile-card">
+            <div class="profile-head"><div class="avatar big">M</div><div><h3>Mariana Silva</h3><p>Conta demonstrativa • Paciente</p></div><button class="outline" id="editProfile">Editar perfil</button></div>
+            <div class="profile-fields"><label>Objetivo atual<input value="Recuperação acompanhada" disabled></label><label>Profissional vinculado<input value="Dra. Ana Beatriz (demonstração)" disabled></label><label>Preferência de acessibilidade<select><option>Padrão</option><option>Texto ampliado</option><option>Alto contraste</option></select></label><label>Lembretes<select><option>Ativados</option><option>Desativados</option></select></label></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section professionals-public" id="profissionais">
+      <div class="section-head split"><div><span class="eyebrow">CONEXÃO COM PROFISSIONAIS</span><h2>Encontre fisioterapeutas e clínicas.</h2></div><p>Perfis demonstrativos. Em uma versão real, a plataforma teria verificação profissional e informações de registro.</p></div>
+      <div class="public-pro-grid" id="publicProfessionalGrid"></div>
+    </section>
+
+    <section class="section plans" id="planos">
+      <div class="section-head center"><span class="eyebrow">MODELO DE NEGÓCIO</span><h2>Comece grátis e evolua quando precisar.</h2></div>
+      <div class="plans-grid">
+        <article><span class="plan-name">Gratuito</span><h3>R$ 0</h3><p>Para conhecer a plataforma.</p><ul><li>Conteúdos educativos básicos</li><li>Registro simples de progresso</li><li>Busca de profissionais</li><li>Recursos de acessibilidade</li></ul><button class="outline full" data-plan="Gratuito">Começar grátis</button></article>
+        <article class="featured"><div class="popular">MAIS COMPLETO</div><span class="plan-name">Plus</span><h3>R$ 19,90 <small>/mês</small></h3><p>Exemplo de assinatura do protótipo.</p><ul><li>Biblioteca ampliada</li><li>Metas e histórico detalhado</li><li>Plano vinculado ao profissional</li><li>Lembretes e acompanhamento</li></ul><button class="primary full" data-plan="Plus">Testar plano</button></article>
+        <article><span class="plan-name">Profissional</span><h3>Parceria</h3><p>Para fisioterapeutas e clínicas.</p><ul><li>Perfil profissional</li><li>Organização de pacientes</li><li>Indicação de conteúdos</li><li>Relatórios de adesão</li></ul><button class="outline full" id="btnProfessional">Cadastrar profissional</button></article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div><span class="eyebrow light">MOVIFISIO</span><h2>Mais acesso, mais orientação, mais continuidade no cuidado.</h2><p>Protótipo de uma plataforma que aproxima pacientes, conteúdo educativo e profissionais de fisioterapia.</p></div>
+      <button class="white-btn" id="ctaCreate">Criar conta demonstrativa</button>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">M</span><span>Movi<span>Fisio</span></span></div><p>Protótipo acadêmico/demonstrativo. Não oferece diagnóstico ou prescrição terapêutica.</p><span>© 2026 MoviFisio</span></footer>
+
+  <div class="modal" id="authModal" aria-hidden="true">
+    <div class="modal-card auth-card">
+      <button class="modal-close" data-close>×</button>
+      <span class="eyebrow">ACESSO À PLATAFORMA</span>
+      <h2 id="authTitle">Crie sua conta</h2>
+      <div class="role-switch"><button class="active" data-role="paciente">Sou paciente</button><button data-role="profissional">Sou profissional/clínica</button></div>
+      <form id="authForm">
+        <label>Nome completo<input required placeholder="Seu nome"></label>
+        <label>E-mail<input required type="email" placeholder="voce@email.com"></label>
+        <label>Senha<input required type="password" placeholder="Mínimo 6 caracteres" minlength="6"></label>
+        <div id="professionalFields" class="hidden"><label>Especialidade<input placeholder="Ex.: Fisioterapia Ortopédica"></label><label>Registro profissional<input placeholder="CREFITO (demonstração)"></label></div>
+        <label class="check"><input type="checkbox" required> <span>Li que a plataforma não substitui avaliação profissional.</span></label>
+        <button class="primary full" type="submit">Continuar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="exerciseModal" aria-hidden="true">
+    <div class="modal-card exercise-modal-card">
+      <button class="modal-close" data-close>×</button>
+      <div class="video-stage"><div class="video-person">◯<span>╱│╲</span><b>╱ ╲</b></div><div class="video-overlay"><span id="videoTimer">00:00</span><button id="playDemo">▶ Reproduzir demonstração</button></div></div>
+      <div class="exercise-detail"><span class="tag" id="exerciseCategory">MOBILIDADE</span><h2 id="exerciseTitle">Mobilidade de ombro</h2><p id="exerciseDesc"></p><div class="steps" id="exerciseSteps"></div><div class="warning"><strong>Antes de fazer</strong><p>Este conteúdo é educativo. Faça somente se estiver de acordo com a orientação do seu fisioterapeuta. Interrompa em caso de piora importante dos sintomas e procure atendimento adequado.</p></div><button class="primary full" id="completeExercise">Marcar como concluído</button></div>
+    </div>
+  </div>
+
+  <div class="modal" id="professionalModal" aria-hidden="true">
+    <div class="modal-card pro-modal-card">
+      <button class="modal-close" data-close>×</button>
+      <div class="pro-profile-top"><div class="pro-photo" id="proPhoto">AB</div><div><span class="verified">✓ Perfil demonstrativo</span><h2 id="proName">Dra. Ana Beatriz</h2><p id="proSpecialty">Fisioterapia Ortopédica</p><div class="rating">★★★★★ <span>4,9</span></div></div></div>
+      <div class="pro-info-grid"><div><span>Atendimento</span><strong id="proMode">Presencial e online</strong></div><div><span>Local</span><strong id="proCity">Fortaleza - CE</strong></div><div><span>Experiência</span><strong id="proExp">8 anos</strong></div></div>
+      <label>Escolha uma data para solicitar atendimento<input type="date" id="appointmentDate"></label>
+      <button class="primary full" id="requestAppointment">Solicitar contato</button>
+      <small class="modal-footnote">No produto real, horários e contratação dependeriam da agenda e dos termos do profissional.</small>
+    </div>
+  </div>
+
+  <div class="modal" id="articleModal" aria-hidden="true">
+    <div class="modal-card article-card"><button class="modal-close" data-close>×</button><span class="eyebrow">CONTEÚDO EDUCATIVO</span><h2 id="articleTitle"></h2><p>Este é um conteúdo demonstrativo de prevenção. Na versão real, os materiais seriam revisados por profissionais qualificados e apresentados com fontes e orientações adequadas.</p><h3>O que você encontraria aqui?</h3><p>Explicações simples, ilustrações, vídeos curtos, cuidados gerais e indicação de quando buscar avaliação profissional.</p><div class="warning"><strong>Importante</strong><p>Informação educativa não substitui uma avaliação individual.</p></div></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
